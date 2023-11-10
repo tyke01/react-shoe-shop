@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <>
-    <nav className="flex items-center justify-between px-10 py-5 fixed w-full bg-secondary-background-color">
+    <nav className="flex items-center justify-between px-10 py-5 fixed w-full bg-secondary-background-color z-50">
       <a href="#">
         <h2 className="text-xl text-light-color">Sneaker Shop</h2>
       </a>

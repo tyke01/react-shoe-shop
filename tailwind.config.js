@@ -24,8 +24,9 @@ export default {
         'light-color': '#fff',
         'light-color-alt': '#afb6cd',
         'secondary-background-color': '#252830',
-
+        'light-border-color':'#30333b',
       }
+      
     },
   },
   plugins: [],
