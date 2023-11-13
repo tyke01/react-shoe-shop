@@ -9,24 +9,48 @@
   );
 }
 
-.fancy-border {
-    position: relative;
-    overflow: hidden;
+.section-title {
+  position: relative;
+  @apply text-2xl text-light-color font-bold
+}
+.section-title::before {
+  content: attr(data-name);
+  text-transform: uppercase;
+  opacity: 0.1;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.5rem;
+  @apply text-3xl text-light-color-alt font-bold
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.arrow {
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  @apply  top-64 text-light-color text-3xl hover:text-light-color-alt
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
   }
-  .fancy-border::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background: var(--gradient-color);
-    background-size: 50% 100%;
-    z-index: 5;
-  }
-  .fancy-border span {
-    position: relative;
-    z-index: 7;
-    display: inline-flex;
-    padding: 0.6rem 1.5rem;
-  }
+}
+.swipe{
+  @apply relative
+}

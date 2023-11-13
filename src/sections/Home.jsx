@@ -2,7 +2,7 @@ import { NewShoes } from "../data";
 
 const Home = () => {
   return (
-    <section className="pt-20 text-xl text-light-color  grid grid-cols-3 gap-4 p-6">
+    <section className="pt-28 lg:pt-20 text-xl text-light-color  grid grid-cols-1 lg:grid-cols-3 gap-4 p-6">
       <div className="flex items-center gap-5 bg-secondary-background-color lg:col-span-2 text-sm text-light-color-alt">
         <button className=" border-[4px] border-light-color-alt p-3">
           <span className="font-bold">Breaking News</span>
@@ -47,7 +47,7 @@ const Home = () => {
       </div>
       {/*  */}
       <div className="relative h-[260px] w-full">
-        <img src="nikes-2.jpg" alt="shoe" className="h-full w-full" />
+        <img src="nikes-2.jpg" alt="shoe" className="h-full w-full object-cover" />
         <div className="absolute bottom-0 w-full bg-black/75 hover:bg-primary-background-color transition-all ease-in-out duration-300 px-3 py-3">
           <div className=" flex items-center justify-between text-xs text-light-color-alt ">
             <span>Dec 20th 2023</span>

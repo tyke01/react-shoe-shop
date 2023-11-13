@@ -27,11 +27,11 @@ const Search = () => {
     <div
       className={`fixed top-0 left-0 w-full h-full bg-primary-background-color flex items-center justify-center ${
         isOpen ? "" : "hidden"
-      } z-10`}
+      } z-30`}
     >
       <div className="flex flex-col">
         <div
-          className="text-xl text-light-color-alt border-2 p-4 border-secondary-background-color fixed top-10 right-10 cursor-pointer"
+          className="text-xl text-light-color-alt border-2 p-4 border-secondary-background-color fixed top-20 right-10 cursor-pointer"
           onClick={handleCloseClick}
         >
           <AiOutlineClose />
