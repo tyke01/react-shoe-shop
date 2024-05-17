@@ -79,7 +79,7 @@ const Nav = () => {
         {/* Actions */}
         <div className="flex items-center gap-6 text-light-color-alt">
           <div className="flex items-center text-xl absolute right-40 lg:right-56">
-            <button
+            {/* <button
               type="button"
               id="light-toggle-btn"
               title="light"
@@ -94,7 +94,7 @@ const Nav = () => {
               className="hidden hover:text-light-color"
             >
               <BsFillMoonFill />
-            </button>
+            </button> */}
           </div>
           <div className="hidden lg:flex gap-5">
             <button onClick={toggleSearch} className="hover:text-light-color">
